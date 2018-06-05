@@ -18,6 +18,7 @@ public class App
         App app = new App();
         
         int[] numbers = new int[] {2,5,7,9,13,91,92,93,94,95,96,97,99,100};
+        
         //System.out.print("Prime numbers are::");
         System.out.println("Prime numbers are::"+ Arrays.stream(numbers).boxed().filter(app::isPrimeNumber).collect(Collectors.toList()));
         
